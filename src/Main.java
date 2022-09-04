@@ -45,8 +45,6 @@ public class Main {
         for (int i = 0; i < products.length; i++) {
             if (counts[i] != 0) {
 
-                System.out.println("\t" + products[i] + " " + (doBonus ? counts[i] + 1 : counts[i]) + " шт. за " + (prices[i] * counts[i]) + " руб.");
-
                 boolean isOnSale = false;
                 for (String saleProduct : productsOnSale) {
                     if (products[i].equals(saleProduct)) {
